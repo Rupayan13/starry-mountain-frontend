@@ -50,11 +50,11 @@ function Destinations() {
   return (
     <section className="destinations">
       <h2>
-        Choose Your 
+        Choose Your Destination
         <span style={{ color: '#f4c10f', fontWeight: 'bold' }}>
         {" "}
         <Typewriter
-          words={['Destination', ...destinations.map(place => place.name)]}
+          words={destinations.map(place => place.name)}
           loop={false}
           cursor
           cursorStyle="_"

@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import { FaLandmark, FaPhone, FaEnvelope, FaFacebookF, FaInstagram} from "react-icons/fa";
+import { FaLandmark, FaPhone, FaEnvelope, FaFacebookF, FaInstagram } from "react-icons/fa";
 import logo from '../assets/Logo2.png'   // put your logo inside src/assets
 import { Link } from "react-router-dom";
 
@@ -16,6 +16,7 @@ function Footer() {
                         Explore the India with us. Book your dream destinations and
                         unforgettable experiences with Starry Mountain.
                     </p>
+                    <p>Certificate No.- 0917P290925260514</p>
                 </div>
 
                 {/* Quick Links */}
