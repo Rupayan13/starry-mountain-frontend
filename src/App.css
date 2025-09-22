@@ -927,14 +927,16 @@ footer {
 }
 
 .sidebar-toggle {
+  position: sticky;   /* stick relative to admin-main */
+  top: 10px;          /* distance from top inside admin-main */
+  left: 0;
+  z-index: 20;        /* above table */
   background: #f4c10f;
-  color: #000;
   border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 6px;
+  padding: 8px 12px;
   font-size: 18px;
-  margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .admin-main h1 {
@@ -1049,7 +1051,7 @@ footer {
 }
 /* Admin Feedback Table Styles */
 .booking-table-page {
-  max-width: 1200px;
+  max-width: 1000px;
   width: 95%;
   margin: 40px auto;
   padding: 20px;
@@ -1064,6 +1066,8 @@ footer {
 
 .table-container {
   overflow-x: auto;
+  position: relative;
+  z-index: 1; /* keeps it below the toggle button */
 }
 
 .booking-table {
@@ -1173,9 +1177,7 @@ footer {
   position: sticky;
   right: 0;
   background: #fff;
-  z-index: 2;
-  min-width: 120px; /* give space for buttons */
-  text-align: center;
+  z-index: 2;  /* lower than toggle button */
 }
 
 /* Approve button styling */
