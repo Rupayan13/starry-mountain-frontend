@@ -1495,77 +1495,98 @@ footer {
     font-size: 1rem;
   }
 }
-/* Feedback Section */
+/* =======================
+   Feedback Section
+======================= */
 .feedback-section {
-  padding: 60px 20px;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #fff9e6, #fdfdfd);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback-content {
+  width: 100%;
+  max-width: 1200px;
   text-align: center;
-  background: linear-gradient(135deg, #f4c10f20, #ffffff);
 }
 
 .feedback-heading {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   font-weight: 700;
-  color: #333;
+  color: #2b2b2b;
   margin-bottom: 10px;
-  letter-spacing: 1px;
 }
 
 .feedback-section .underline {
-  width: 100px;
+  width: 120px;
   height: 4px;
   background: linear-gradient(90deg, #f4c10f, #f9a825);
-  margin: 0 auto 40px auto;
+  margin: 0 auto 60px auto;
   border-radius: 3px;
 }
 
-.feedback-wrapper {
-  display: flex;
-  gap: 25px;
-  overflow-x: auto;
-  padding-bottom: 10px;
-  scrollbar-width: thin;
-  scrollbar-color: #ccc transparent;
-  scroll-snap-type: x mandatory;
+/* Feedback Container (Grid) */
+.feedback-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
 }
 
-.feedback-wrapper::-webkit-scrollbar {
-  height: 6px;
-}
-
-.feedback-wrapper::-webkit-scrollbar-thumb {
-  background: #ccc;
-  border-radius: 4px;
-}
-
+/* Individual Card */
 .feedback-card {
-  min-width: 280px;
-  max-width: 340px;
-  background: #fff;
-  border-radius: 15px;
-  padding: 25px 20px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  flex: 0 0 auto;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  scroll-snap-align: start;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 35px 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
 }
 
 .feedback-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Decorative gradient border on hover */
+.feedback-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(135deg, #f4c10f, #f9a825);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.feedback-card:hover::before {
+  opacity: 1;
 }
 
 .quote-icon {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #f4c10f;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .feedback-text {
-  font-size: 1rem;
-  color: #555;
+  font-size: 1.05rem;
+  color: #444;
   font-style: italic;
-  margin-bottom: 15px;
-  line-height: 1.6;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  transition: color 0.3s ease;
+}
+
+.feedback-card:hover .feedback-text {
+  color: #222;
 }
 
 .feedback-name {
@@ -1574,13 +1595,39 @@ footer {
   color: #333;
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-  .feedback-wrapper {
-    gap: 20px;
+/* Animation on load */
+.feedback-card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.feedback-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.feedback-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.feedback-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  .feedback-card {
-    min-width: 260px;
+}
+
+/* =======================
+   Responsive
+======================= */
+@media (max-width: 1024px) {
+  .feedback-heading {
+    font-size: 2.3rem;
+  }
+  .feedback-container {
+    gap: 25px;
   }
 }
 
@@ -1588,30 +1635,20 @@ footer {
   .feedback-heading {
     font-size: 2rem;
   }
-  .feedback-wrapper {
-    gap: 15px;
-  }
   .feedback-card {
-    min-width: 240px;
-    padding: 20px 15px;
+    padding: 28px 20px;
   }
 }
 
 @media (max-width: 480px) {
   .feedback-heading {
-    font-size: 1.6rem;
-  }
-  .feedback-wrapper {
-    gap: 12px;
-  }
-  .feedback-card {
-    min-width: 200px;
-    padding: 15px 12px;
+    font-size: 1.7rem;
   }
   .feedback-text {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
   .feedback-name {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
 }
+
