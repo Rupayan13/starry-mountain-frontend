@@ -4,7 +4,7 @@ import '../App.css';
 
 const Whatsapp = () => {
     const phoneNumber = "917602664434";
-    const message = encodeURIComponent("Hi, Starry Mountain");
+    const message = encodeURIComponent("Hi, Starry Mountain...");
     const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
     // OR use: const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
 

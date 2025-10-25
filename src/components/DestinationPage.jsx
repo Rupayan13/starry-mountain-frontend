@@ -93,7 +93,7 @@ function DestinationPage() {
         <h3>Send us your feedback</h3>
         <form onSubmit={Submit}>
           <input type="text" placeholder="Your Name" onChange={(e) => setName(e.target.value)} required />
-          <input type="email" placeholder="Your Email" onChange={(e) => setEmail(e.target.value)} required />
+          <input type="email" placeholder="Your Email" onChange={(e) => setEmail(e.target.value)}/>
           <textarea placeholder="Your Feedback" rows="4" onChange={(e) => setFeedback(e.target.value)} required></textarea>
           <button type="submit">Submit</button>
         </form>
