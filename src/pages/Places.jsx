@@ -5,12 +5,6 @@ import "../App.css";
 function Places() {
     const places = [
         {
-            id: "bijanbari",
-            name: "Bijanbari",
-            img: "images/bijanbari_main.jpg",
-            desc: "A serene town surrounded by lush hills, offering peace and natural beauty away from the city’s hustle."
-        },
-        {
             id: "dawaipani",
             name: "Dawaipani",
             img: "images/dawaipani_main.jpg",
@@ -45,6 +39,18 @@ function Places() {
             name: "Tinchule",
             img: "images/tinchule_main.jpg",
             desc: "Tinchuley is a hilltop haven with panoramic views, ideal for sunrise treks and quiet contemplation amidst nature."
+        },
+        {
+            id: "mairung_gaon",
+            name: "Mairung Gaon",
+            img: "images/mairung_gaon_main.jpg",
+            desc: "Mairung Gaon is a serene Himalayan village offering scenic views, warm hospitality, and authentic local experiences."
+        },
+        {
+            id: "bijanbari",
+            name: "Bijanbari",
+            img: "images/bijanbari_main.jpg",
+            desc: "A serene town surrounded by lush hills, offering peace and natural beauty away from the city’s hustle."
         }
     ];
 

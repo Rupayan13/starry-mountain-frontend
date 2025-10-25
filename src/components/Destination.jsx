@@ -11,11 +11,6 @@ import { Link } from "react-router-dom";
 function Destinations() {
   const destinations = [
     {
-      id: "bijanbari",
-      name: "Bijanbari",
-      img: "images/bijanbari_main.jpg"
-    },
-    {
       id: "dawaipani",
       name: "Dawaipani",
       img: "images/dawaipani_main.jpg"
@@ -44,6 +39,17 @@ function Destinations() {
       id: "tinchule",
       name: "Tinchule",
       img: "images/tinchule_main.jpg"
+    }
+    ,
+    {
+      id: "mairung_gaon",
+      name: "Mairung Gaon",
+      img: "images/mairung_gaon_main.jpg"
+    },
+    {
+      id: "bijanbari",
+      name: "Bijanbari",
+      img: "images/bijanbari_main.jpg"
     }
   ];
 

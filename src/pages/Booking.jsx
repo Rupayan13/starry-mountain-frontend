@@ -167,6 +167,7 @@ function BookingPage() {
               <option value="3 nights 4 days">3 nights 4 days</option>
               <option value="4 nights 5 days">4 nights 5 days</option>
               <option value="5 nights 6 days">5 nights 6 days</option>
+              <option value="6 nights 7 days">6 nights 7 days</option>
             </select>
           </div>
 

@@ -5,11 +5,6 @@ import axios from "axios";
 
 // Destination data
 const destinations = {
-  bijanbari: {
-    name: "Bijanbari",
-    desc: "Bijanbari is a serene town surrounded by lush hills, offering peace and natural beauty away from the city’s hustle.",
-    totalImages: 3
-  },
   dawaipani: {
     name: "Dawaipani",
     desc: "Dawaipani is a hidden gem in North Bengal, perfect for nature lovers seeking tranquility and scenic landscapes.",
@@ -38,6 +33,16 @@ const destinations = {
   tinchule: {
     name: "Tinchule",
     desc: "Tinchuley is a hilltop haven with panoramic views, ideal for sunrise treks and quiet contemplation amidst nature.",
+    totalImages: 3
+  },
+  mairung_gaon:{
+    name: "Mairung Gaon",
+    desc: "Mairung Gaon is a serene Himalayan village offering scenic views, warm hospitality, and authentic local experiences.",
+    totalImages: 3
+  },
+  bijanbari: {
+    name: "Bijanbari",
+    desc: "Bijanbari is a serene town surrounded by lush hills, offering peace and natural beauty away from the city’s hustle.",
     totalImages: 3
   }
 };

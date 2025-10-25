@@ -9,39 +9,63 @@ function Carousel() {
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img 
-                            src="images/dooars.jpg" 
-                            className="d-block w-100" 
+                        <img
+                            src="images/kanchunjungha2.jpeg"
+                            className="d-block w-100"
                             alt="Dooars"
                         />
                         <div className="carousel-caption d-none d-md-block" style={{ textShadow: "2px 2px 8px rgba(0, 0, 0, 0.7)" }}>
-                            <h5 style={{ fontSize: "2.3rem", fontWeight: "bold" }}>Dooars</h5>
-                            <p>Starry Mountain invites you to experience Dooars magic</p>
+                            <h5 style={{ fontSize: "1.8rem", fontWeight: "bold" }}>Explore with Starry Mountain</h5>
+                            <p>Explore the heights, embrace the beauty.</p>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img 
-                            src="images/dawaipani.jpg" 
-                            className="d-block w-100" 
+                        <img
+                            src="images/tista.jpeg"
+                            className="d-block w-100"
                             alt="Dawaipani"
                         />
                         <div className="carousel-caption d-none d-md-block" style={{ textShadow: "2px 2px 8px rgba(0, 0, 0, 0.7)" }}>
-                            <h5 style={{ fontSize: "2.3rem", fontWeight: "bold" }}>Dawaipani</h5>
-                            <p>Experience Dawaipani like never before with Starry Mountain.</p>
+                            <h5 style={{ fontSize: "1.8rem", fontWeight: "bold" }}>Explore with Starry Mountain</h5>
+                            <p>Explore the heights, embrace the beauty.</p>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img 
-                            src="images/Tabakoshi.jpg" 
-                            className="d-block w-100" 
+                        <img
+                            src="images/sikkim.jpeg"
+                            className="d-block w-100"
                             alt="Tabakoshi"
                         />
                         <div className="carousel-caption d-none d-md-block" style={{ textShadow: "2px 2px 8px rgba(0, 0, 0, 0.7)" }}>
-                            <h5 style={{ fontSize: "2.3rem", fontWeight: "bold" }}>Tabakoshi</h5>
-                            <p>Step into Tabakoshi’s landscapes with Starry Mountain.</p>
+                            <h5 style={{ fontSize: "1.8rem", fontWeight: "bold" }}>Explore with Starry Mountain</h5>
+                            <p>Explore the heights, embrace the beauty.</p>
+                        </div>
+                    </div>
+                    <div className="carousel-item">
+                        <img
+                            src="images/lamahata.jpeg"
+                            className="d-block w-100"
+                            alt="Tabakoshi"
+                        />
+                        <div className="carousel-caption d-none d-md-block" style={{ textShadow: "2px 2px 8px rgba(0, 0, 0, 0.7)" }}>
+                            <h5 style={{ fontSize: "1.8rem", fontWeight: "bold" }}>Explore with Starry Mountain</h5>
+                            <p>Explore the heights, embrace the beauty.</p>
+                        </div>
+                    </div>
+                    <div className="carousel-item">
+                        <img
+                            src="images/kanchunjungha.jpeg"
+                            className="d-block w-100"
+                            alt="Tabakoshi"
+                        />
+                        <div className="carousel-caption d-none d-md-block" style={{ textShadow: "2px 2px 8px rgba(0, 0, 0, 0.7)" }}>
+                            <h5 style={{ fontSize: "1.8rem", fontWeight: "bold" }}>Explore with Starry Mountain</h5>
+                            <p>Explore the heights, embrace the beauty.</p>
                         </div>
                     </div>
                 </div>
