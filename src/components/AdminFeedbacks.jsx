@@ -39,11 +39,6 @@ const AdminFeedbacks = () => {
       .catch((err) => console.log(err));
   };
 
-  // className Now handleEdit only sets the ID
-  const handleEdit = (id) => {
-    setSelectedId(id);
-  };
-
   return (
     <div className="booking-table-page">
       <h2>User Feedbacks</h2>
@@ -78,7 +73,7 @@ const AdminFeedbacks = () => {
                     className="edit-btn"
                     data-bs-toggle="modal"
                     data-bs-target="#exampleModal"
-                    onClick={() => handleEdit(feedback._id)}
+                    onClick={() => setSelectedId(feedback._id)}
                   >
                     Edit
                   </button>

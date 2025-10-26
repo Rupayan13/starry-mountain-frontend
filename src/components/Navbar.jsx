@@ -44,6 +44,7 @@ function Navbar() {
           <li><Link to="/places">Destinations</Link></li>
           <li><Link to="/booking">Bookings</Link></li>
           <li><Link to="/about">About</Link></li>
+          <li><Link to="Starry-Mountain.pdf" target="_blank">Policies</Link></li>
           <li><Link to="/contact">Contact</Link></li>
           {/* <li><a to="#" className="btn">Book Now</a></li> */}
         </ul>
