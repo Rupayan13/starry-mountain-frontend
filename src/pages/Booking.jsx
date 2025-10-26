@@ -11,6 +11,7 @@ function BookingPage() {
   const [checkout, setCheckout] = useState("");
   const [adults, setAdults] = useState(0);
   const [children, setChildren] = useState(0);
+  const [rooms, setRooms] = useState(1);
   const [duration, setDuration] = useState("1 night 2 days");
   const [req, setReq] = useState("");
   const navigate = useNavigate();
@@ -31,6 +32,7 @@ function BookingPage() {
         adults,
         children,
         totalGuests,
+        rooms,
         duration,
         requests: req,
       })
@@ -131,8 +133,6 @@ function BookingPage() {
               <input
                 type="number"
                 id="adults"
-                min="1"
-                max="10"
                 value={adults}
                 onChange={(e) => setAdults(Number(e.target.value))}
                 required
@@ -144,12 +144,21 @@ function BookingPage() {
               <input
                 type="number"
                 id="children"
-                min="0"
-                max="10"
                 value={children}
                 onChange={(e) => setChildren(Number(e.target.value))}
               />
             </div>
+          </div>
+          {/* No of rooms */}
+          <div className="form-group">
+            <label htmlFor="room">Number of Rooms <span style={{ color: "red" }}>*</span></label>
+            <input
+              type="number"
+              id="room"
+              value={rooms}
+              onChange={(e) => setRooms(e.target.value)}
+              required
+            />
           </div>
 
           {/* Duration Dropdown */}

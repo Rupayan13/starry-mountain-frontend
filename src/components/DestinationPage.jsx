@@ -97,9 +97,12 @@ function DestinationPage() {
       <div className="feedback-form">
         <h3>Send us your feedback</h3>
         <form onSubmit={Submit}>
-          <input type="text" placeholder="Your Name" onChange={(e) => setName(e.target.value)} required />
-          <input type="email" placeholder="Your Email" onChange={(e) => setEmail(e.target.value)}/>
-          <textarea placeholder="Your Feedback" rows="4" onChange={(e) => setFeedback(e.target.value)} required></textarea>
+          <label htmlFor="name">Name <span style={{ color: "red" }}>*</span></label>
+          <input type="text" id="name" placeholder="Your Name" onChange={(e) => setName(e.target.value)} required />
+          <label htmlFor="email">Email</label>
+          <input type="email" id="email" placeholder="Your Email" onChange={(e) => setEmail(e.target.value)}/>
+          <label htmlFor="feedback">Feedback <span style={{ color: "red" }}>*</span></label>
+          <textarea id="feedback" placeholder="Your Feedback" rows="4" onChange={(e) => setFeedback(e.target.value)} required></textarea>
           <button type="submit">Submit</button>
         </form>
       </div>

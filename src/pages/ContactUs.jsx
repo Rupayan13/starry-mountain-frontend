@@ -5,11 +5,12 @@ import axios from "axios";
 const ContactUs = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
+    const [mobile, setMobile] = useState("");
     const [message, setMessage] = useState("");
 
     const Submit = (e) => {
         e.preventDefault();
-        axios.post("https://starry-mountain-backend.onrender.com/submitContact", { name, email, message: message })
+        axios.post("https://starry-mountain-backend.onrender.com/submitContact", { name, email, mobile, message: message })
             .then(result => {
                 console.log(result);
                 alert("Contact info submitted successfully!"); // <-- Alert added here
@@ -31,8 +32,11 @@ const ContactUs = () => {
                         <label>Name<span style={{ color: "red" }}>*</span></label>
                         <input type="text" placeholder="Your Name" required onChange={(e) => setName(e.target.value)} />
 
-                        <label>Email<span style={{ color: "red" }}>*</span></label>
-                        <input type="email" placeholder="Your Email" required onChange={(e) => setEmail(e.target.value)} />
+                        <label>Email</label>
+                        <input type="email" placeholder="Your Email" onChange={(e) => setEmail(e.target.value)} />
+
+                        <label>Mobile<span style={{ color: "red" }}>*</span></label>
+                        <input type="text" placeholder="Your Monile Number" required onChange={(e) => setMobile(e.target.value)} />
 
                         <label>Message<span style={{ color: "red" }}>*</span></label>
                         <textarea rows="5" placeholder="Your Message" required onChange={(e) => setMessage(e.target.value)}></textarea>
