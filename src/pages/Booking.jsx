@@ -134,6 +134,7 @@ function BookingPage() {
                 type="number"
                 id="adults"
                 value={adults}
+                min="1"
                 onChange={(e) => setAdults(Number(e.target.value))}
                 required
               />
