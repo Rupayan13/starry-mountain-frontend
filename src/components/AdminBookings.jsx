@@ -34,6 +34,7 @@ function Booking() {
               <th>Check-in Date</th>
               <th>Check-out Date</th>
               <th>Guests</th>
+              <th>Rooms</th>
               <th>Duration</th>
               <th>Requests</th>
               <th className="sticky-action-col">Actions</th>
@@ -48,6 +49,7 @@ function Booking() {
                 <td>{new Date(booking.checkin).toLocaleDateString()}</td>
                 <td>{new Date(booking.checkout).toLocaleDateString()}</td>
                 <td>{booking.adults + booking.children} ({booking.adults} Adults, {booking.children} Children)</td>
+                <td>{booking.rooms}</td>
                 <td>{booking.duration}</td>
                 <td>{booking.requests || "-"}</td>
                 <td className="sticky-action-col">

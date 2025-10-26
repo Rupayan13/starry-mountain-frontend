@@ -30,6 +30,7 @@ const AdminContact = () => {
             <tr>
               <th>Name</th>
               <th>Email</th>
+              <th>Mobile</th>
               <th>Message</th>
               <th className="sticky-action-col">Actions</th>
             </tr>
@@ -39,6 +40,7 @@ const AdminContact = () => {
               <tr key={item._id}>
                 <td>{item.name}</td>
                 <td>{item.email}</td>
+                <td>{item.mobile}</td>
                 <td>{item.message}</td>
                 <td className="sticky-action-col">
                   <button
