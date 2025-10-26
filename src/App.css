@@ -1110,7 +1110,7 @@ footer {
   height: 100%; /* ensures td takes full height */
 }
 
-.approve-btn, .reject-btn {
+.approve-btn, .reject-btn, .edit-btn {
   padding: 6px 12px;
   border: 1px solid transparent; /* border for better visual */
   border-radius: 6px;
@@ -1133,6 +1133,18 @@ footer {
 .approve-btn:hover {
   background-color: #43a047;
   border-color: #43a047;
+  transform: translateY(-2px);
+}
+
+.edit-btn {
+  background-color: #f4c10f;
+  color: white;
+  border-color: #d8ac0b;
+}
+
+.edit-btn:hover {
+  background-color: #f4c10f;
+  border-color: #d8ac0b;
   transform: translateY(-2px);
 }
 

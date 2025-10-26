@@ -15,11 +15,11 @@ function BookingPage() {
   const [duration, setDuration] = useState("1 night 2 days");
   const [req, setReq] = useState("");
   const navigate = useNavigate();
-   const [loading, setLoading] = useState(false);   // ✅ new loading state
+  const [loading, setLoading] = useState(false);   // className new loading state
 
   const Submit = (e) => {
     e.preventDefault();
-    setLoading(true); // ✅ show loading
+    setLoading(true); // className show loading
     const totalGuests = adults + children;
 
     axios
@@ -44,10 +44,10 @@ function BookingPage() {
       .catch((err) => {
         console.log(err);
         alert("Something went wrong. Please try again.");
-      }).finally(() => setLoading(false)); // ✅ hide loading
+      }).finally(() => setLoading(false)); // className hide loading
   };
 
-  // ✅ If loading, show a loader page
+  // className If loading, show a loader page
   if (loading) {
     return (
       <div className="loading-page">
