@@ -11,6 +11,8 @@ import Admin from './pages/Admin';
 import AdminLogin from './pages/AdminLogin';
 import Whatsapp from './components/Whatsapp';
 import ContactUs from './pages/ContactUs';
+import OfferIcon from './components/OfferIcon';
+import Offerpage from './pages/Offerpage';
 
 
 function App() {
@@ -35,9 +37,11 @@ function Main() {
         <Route path="/booking" element={<Booking />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/offer" element={<Offerpage />} />
         <Route path="/admin-login" element={<AdminLogin />} />
         <Route path="/admin/*" element={<Admin />} />
       </Routes>
+      {!hideNavAndFooter && <OfferIcon />}
       {!hideNavAndFooter && <Whatsapp />}
       {!hideNavAndFooter && <Footer />}
     </>

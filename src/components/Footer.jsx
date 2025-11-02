@@ -36,7 +36,7 @@ function Footer() {
                 <div className="footer-section contact">
                     <h3>Contact Us</h3>
                     <p><span style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem" }}><FaLandmark />Gupta Shopping Complex, 1st Floor, Dankuni Housing Hoogly-712311</span></p>
-                    <p><span style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem" }}><FaPhone /> +91 70033 28637  ||  +9198312 37696</span></p>
+                    <p><span style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem" }}><FaPhone /> +91 70033 28637  ||  +91 98312 37696</span></p>
                     <p><span style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem" }}><FaEnvelope /> starrymountain2024@gmail.com</span></p>
                 </div>
 

@@ -25,7 +25,9 @@ function Feedbacks() {
             .map((item, index) => (
               <div className="feedback-card" key={index}>
                 <FaQuoteLeft className="quote-icon" />
-                <p className="feedback-text">“{item.feedback}”</p>
+                <p className="feedback-text">
+                  “{item.feedback}”
+                </p>
                 <h4 className="feedback-name">— {item.name}</h4>
               </div>
             ))}

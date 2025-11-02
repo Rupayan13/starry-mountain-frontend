@@ -12,7 +12,6 @@ const Whatsapp = () => {
         <div className="whatsapp-container">
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
                 <img src={whatsapp} alt="whatsapp" className="whatsapp-icon" />
-                <span className="whatsapp-text">Chat with us!!!</span>
             </a>
         </div>
     );

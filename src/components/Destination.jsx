@@ -71,7 +71,7 @@ function Destinations() {
         </span>
       </h2>
       <p className="subtitle">
-        Discover the India's many beautiful places with <span>Starry Mountain</span>.
+        Discover the India's many beautiful places with <span>Starry Mountain.</span>
       </p>
 
       <Swiper
