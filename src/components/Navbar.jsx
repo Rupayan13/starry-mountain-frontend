@@ -17,7 +17,7 @@ function Navbar() {
           </span>
           |
           <span style={{ margin: "0 15px", display: "inline-flex", alignItems: "center" }}>
-            <FaPhone style={{ marginRight: "5px" }} /> +9198312 37696
+            <FaPhone style={{ marginRight: "5px" }} /> +91 98312 37696
           </span>
           |
           <span style={{ margin: "0 15px", display: "inline-flex", alignItems: "center" }}>
