@@ -61,6 +61,13 @@ function AdminLogin() {
 
                     <button type="submit">Login</button>
                 </form>
+                <p
+                    style={{ textAlign: "right", color: "#007bff", cursor: "pointer" }}
+                    onClick={() => navigate("/admin/forgot-password")}
+                >
+                    Forgot Password?
+                </p>
+
             </div>
         </div>
     );

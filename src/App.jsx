@@ -14,6 +14,9 @@ import ContactUs from './pages/ContactUs';
 import OfferIcon from './components/OfferIcon';
 import Offerpage from './pages/Offerpage';
 import OfferDetails from './pages/OfferDetails';
+import AdminForgotPassword from "./pages/AdminForgotPassword";
+import AdminVerifyOtp from "./pages/AdminVerifyOtp";
+import AdminResetPassword from "./pages/AdminResetPassword";
 
 
 function App() {
@@ -42,6 +45,9 @@ function Main() {
         <Route path="/offer/:id" element={<OfferDetails />} />
         <Route path="/admin-login" element={<AdminLogin />} />
         <Route path="/admin/*" element={<Admin />} />
+        <Route path="/admin/forgot-password" element={<AdminForgotPassword />} />
+        <Route path="/admin/verify-otp" element={<AdminVerifyOtp />} />
+        <Route path="/admin/reset-password" element={<AdminResetPassword />} />
       </Routes>
       {!hideNavAndFooter && <OfferIcon />}
       {!hideNavAndFooter && <Whatsapp />}
