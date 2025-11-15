@@ -1810,3 +1810,93 @@ footer {
     height: 260px;  /* smaller height for mobile */
   }
 }
+
+/* offer details */
+/* PAGE WRAPPER */
+.offer-details-container {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* LEFT SIDE IMAGE */
+.offer-details-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.offer-details-img {
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover; /* same look as previous */
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* RIGHT SIDE DETAILS */
+.offer-details-right {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* CENTER vertically */
+  align-items: center;
+}
+
+.offer-details-box {
+  width: 100%;
+  max-width: 420px;
+}
+
+/* TEXT STYLING */
+.offer-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.offer-price {
+  font-size: 34px;
+  font-weight: bold;
+  color: #d90429;
+  margin: 0;
+}
+
+.offer-description {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #444;
+  margin-top: 10px;
+}
+
+.offer-subtitle {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.offer-destinations-list {
+  padding-left: 20px;
+  line-height: 1.8;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .offer-details-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .offer-details-right {
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+  .offer-destinations-list {
+    text-align: left;
+  }
+}
+

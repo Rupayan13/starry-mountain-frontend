@@ -1,16 +1,19 @@
 import React from 'react';
 import '../App.css';
+import { useNavigate } from "react-router-dom";
 
 const Offerpage = () => {
-  // just replace these with your leaflet images
+  const navigate = useNavigate();
+
   const offerImages = [
-    "offer/offer1.jpg",
-    "offer/offer2.jpg",
-    "offer/offer3.jpg",
-    "offer/offer4.jpg",
-    "offer/offer5.jpg",
-    "offer/offer6.jpg",
-    "offer/offer7.jpg",
+    { id: 1, img: "offer/offer1.jpg" },
+    { id: 2, img: "offer/offer2.jpg" },
+    { id: 3, img: "offer/offer3.jpg" },
+    { id: 4, img: "offer/offer4.jpg" },
+    { id: 5, img: "offer/offer5.jpg" },
+    { id: 6, img: "offer/offer6.jpg" },
+    { id: 7, img: "offer/offer7.jpg" },
+    { id: 8, img: "offer/offer8.jpg" },
   ];
 
   return (
@@ -18,14 +21,18 @@ const Offerpage = () => {
       <h1 className="offers-title">Special Offers</h1>
 
       <div className="offers-grid">
-        {offerImages.map((img, index) => (
-          <div className="offer-card" key={index}>
-            <img src={img} alt="Offer" />
+        {offerImages.map((item) => (
+          <div 
+            className="offer-card" 
+            key={item.id}
+            onClick={() => navigate(`/offer/${item.id}`)}
+          >
+            <img src={item.img} alt="Offer" />
           </div>
         ))}
       </div>
     </div>
   );
-}
+};
 
-export default Offerpage
+export default Offerpage;

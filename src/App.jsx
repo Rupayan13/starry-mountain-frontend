@@ -13,6 +13,7 @@ import Whatsapp from './components/Whatsapp';
 import ContactUs from './pages/ContactUs';
 import OfferIcon from './components/OfferIcon';
 import Offerpage from './pages/Offerpage';
+import OfferDetails from './pages/OfferDetails';
 
 
 function App() {
@@ -38,6 +39,7 @@ function Main() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/offer" element={<Offerpage />} />
+        <Route path="/offer/:id" element={<OfferDetails />} />
         <Route path="/admin-login" element={<AdminLogin />} />
         <Route path="/admin/*" element={<Admin />} />
       </Routes>
