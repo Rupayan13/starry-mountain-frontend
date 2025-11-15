@@ -2,19 +2,24 @@
 @import "tailwindcss/preflight";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
-    line-height: 1.6;
-    color: #333;
+  line-height: 1.6;
+  color: #333;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
+
 /* Top bar with marquee */
 .top-bar {
-  background: #f4c10f;   /* Yellow background */
+  background: #f4c10f;
+  /* Yellow background */
   color: #000;
   padding: 5px 0;
   font-size: 0.9rem;
@@ -125,7 +130,7 @@ nav {
     gap: 20px;
     padding: 20px 0;
     display: none;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   .nav-links.active {
@@ -140,31 +145,32 @@ nav {
 /* Carousel */
 
 .carousel-item img {
-    height: 70vh;
-    object-fit: cover;
+  height: 70vh;
+  object-fit: cover;
 }
 
 @media (max-width: 1200px) {
-    .carousel-item img {
-        height: 50vh;
-    }
+  .carousel-item img {
+    height: 50vh;
+  }
 }
 
 @media (max-width: 768px) {
-    .carousel-item img {
-        height: 35vh;
-    }
+  .carousel-item img {
+    height: 35vh;
+  }
 }
 
 @media (max-width: 480px) {
-    .carousel-item img {
-        height: 35vh;
-    }
+  .carousel-item img {
+    height: 35vh;
+  }
 }
 
 /* Footer */
 footer {
-  background: #111; /* Dark theme footer */
+  background: #111;
+  /* Dark theme footer */
   color: #fff;
   padding: 50px 8% 20px;
 }
@@ -177,7 +183,8 @@ footer {
 
 /* About */
 .footer-section.about .logo {
-  color: #f4c10f; /* Yellow logo */
+  color: #f4c10f;
+  /* Yellow logo */
   font-size: 1.8rem;
   margin-bottom: 10px;
 }
@@ -211,7 +218,8 @@ footer {
 }
 
 .footer-section ul li a:hover {
-  color: #f4c10f; /* Yellow hover */
+  color: #f4c10f;
+  /* Yellow hover */
 }
 
 /* Contact */
@@ -308,7 +316,7 @@ footer {
   left: 0;
   right: 0;
   height: 100%;
-  background: rgba(0,0,0,0.3);
+  background: rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -522,7 +530,7 @@ footer {
   width: 300px;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background: #fff;
 }
@@ -535,7 +543,7 @@ footer {
 
 .image-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Feedback Form */
@@ -546,7 +554,7 @@ footer {
   background: #fff;
   padding: 25px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .feedback-form h3 {
@@ -598,6 +606,7 @@ footer {
   .images-gallery {
     gap: 15px;
   }
+
   .image-card {
     width: 45%;
   }
@@ -618,7 +627,7 @@ footer {
 
 /* Hero Section */
 .booking-hero {
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/images/sittong.jpg') no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/sittong.jpg') no-repeat center center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -647,7 +656,7 @@ footer {
   padding: 25px;
   background: #fff;
   border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .booking-form-section h2 {
@@ -686,7 +695,7 @@ footer {
 .booking-form input:focus,
 .booking-form textarea:focus {
   border-color: #f4c10f;
-  box-shadow: 0 0 8px rgba(244,193,15,0.3);
+  box-shadow: 0 0 8px rgba(244, 193, 15, 0.3);
   outline: none;
 }
 
@@ -714,9 +723,11 @@ footer {
   .booking-hero h1 {
     font-size: 2.2rem;
   }
+
   .booking-hero p {
     font-size: 1rem;
   }
+
   .booking-form .form-group-inline {
     flex-direction: column;
   }
@@ -727,6 +738,7 @@ footer {
     margin: -30px 20px 20px;
     padding: 20px;
   }
+
   .booking-form input,
   .booking-form textarea {
     font-size: 0.95rem;
@@ -748,7 +760,7 @@ footer {
 .duration-select:focus {
   outline: none;
   border-color: #f4c10f;
-  box-shadow: 0 0 8px rgba(244,193,15,0.3);
+  box-shadow: 0 0 8px rgba(244, 193, 15, 0.3);
 }
 
 .loading-page {
@@ -773,8 +785,13 @@ footer {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 
@@ -870,7 +887,7 @@ footer {
 .admin-sidebar {
   width: 250px;
   background: #fff;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   overflow: hidden;
 }
@@ -927,10 +944,13 @@ footer {
 }
 
 .sidebar-toggle {
-  position: sticky;   /* stick relative to admin-main */
-  top: 10px;          /* distance from top inside admin-main */
+  position: sticky;
+  /* stick relative to admin-main */
+  top: 10px;
+  /* distance from top inside admin-main */
   left: 0;
-  z-index: 20;        /* above table */
+  z-index: 20;
+  /* above table */
   background: #f4c10f;
   border: none;
   border-radius: 6px;
@@ -954,7 +974,7 @@ footer {
   background: #fff;
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -975,9 +995,11 @@ footer {
   .admin-container {
     flex-direction: row;
   }
+
   .admin-sidebar {
     width: 200px;
   }
+
   .admin-main {
     padding: 15px;
   }
@@ -995,7 +1017,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
   .admin-sidebar h2 {
@@ -1049,6 +1071,7 @@ footer {
     font-size: 0.9rem;
   }
 }
+
 /* Admin Feedback Table Styles */
 .booking-table-page {
   max-width: 1000px;
@@ -1067,14 +1090,16 @@ footer {
 .table-container {
   overflow-x: auto;
   position: relative;
-  z-index: 1; /* keeps it below the toggle button */
+  z-index: 1;
+  /* keeps it below the toggle button */
 }
 
 .booking-table {
   width: 100%;
-  border-collapse: collapse; /* ensures borders are shared */
+  border-collapse: collapse;
+  /* ensures borders are shared */
   background: #fff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .booking-table th,
@@ -1082,7 +1107,8 @@ footer {
   border: 1px solid #ddd;
   padding: 12px 15px;
   text-align: left;
-  vertical-align: middle; /* fixes vertical alignment */
+  vertical-align: middle;
+  /* fixes vertical alignment */
 }
 
 .booking-table th {
@@ -1103,16 +1129,22 @@ footer {
 .action-buttons {
   display: flex;
   gap: 10px;
-  justify-content: flex-start;  /* align buttons to left */
+  justify-content: flex-start;
+  /* align buttons to left */
   align-items: center;
-  padding: 0;  /* remove extra padding */
+  padding: 0;
+  /* remove extra padding */
   margin: 0;
-  height: 100%; /* ensures td takes full height */
+  height: 100%;
+  /* ensures td takes full height */
 }
 
-.approve-btn, .reject-btn, .edit-btn {
+.approve-btn,
+.reject-btn,
+.edit-btn {
   padding: 6px 12px;
-  border: 1px solid transparent; /* border for better visual */
+  border: 1px solid transparent;
+  /* border for better visual */
   border-radius: 6px;
   font-size: 0.9rem;
   cursor: pointer;
@@ -1120,7 +1152,8 @@ footer {
   transition: all 0.3s ease;
   min-width: 80px;
   text-align: center;
-  margin: 0; /* remove extra margin */
+  margin: 0;
+  /* remove extra margin */
   display: inline-block;
 }
 
@@ -1162,11 +1195,13 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+
   .booking-table th,
   .booking-table td {
     padding: 10px;
     font-size: 0.95rem;
   }
+
   .action-buttons {
     flex-direction: column;
     gap: 6px;
@@ -1174,11 +1209,13 @@ footer {
 }
 
 @media (max-width: 480px) {
+
   .booking-table th,
   .booking-table td {
     padding: 8px;
     font-size: 0.85rem;
   }
+
   .action-buttons {
     gap: 4px;
   }
@@ -1189,7 +1226,8 @@ footer {
   position: sticky;
   right: 0;
   background: #fff;
-  z-index: 2;  /* lower than toggle button */
+  z-index: 2;
+  /* lower than toggle button */
 }
 
 /* Approve button styling */
@@ -1203,7 +1241,8 @@ footer {
   cursor: pointer;
   transition: all 0.3s ease;
   display: inline-block;
-  white-space: nowrap; /* prevent breaking */
+  white-space: nowrap;
+  /* prevent breaking */
 }
 
 .complete-btn:hover {
@@ -1225,7 +1264,7 @@ footer {
   background-color: rgba(255, 255, 255, 0.95);
   padding: 30px 40px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 90%;
   max-width: 400px;
   text-align: center;
@@ -1255,7 +1294,8 @@ footer {
 .login-form button {
   width: 100%;
   padding: 12px;
-  background: #f4c10f; /* Yellow theme */
+  background: #f4c10f;
+  /* Yellow theme */
   border: none;
   border-radius: 5px;
   color: #000;
@@ -1271,7 +1311,8 @@ footer {
 
 /* Error message styling */
 .error-message {
-  color: #d60000; /* red */
+  color: #d60000;
+  /* red */
   background: #ffd6d6;
   padding: 10px;
   border-radius: 5px;
@@ -1281,7 +1322,8 @@ footer {
 
 /* Succes message styling */
 .success-message {
-  color: #0f8a1f; /* green */
+  color: #0f8a1f;
+  /* green */
   background: #d4f8d9;
   padding: 10px;
   border-radius: 5px;
@@ -1330,14 +1372,16 @@ footer {
 
 .admin-add-destination input[type="text"]:focus,
 .admin-add-destination input[type="file"]:focus {
-  border: 1px solid #f4c10f; /* Yellow focus */
+  border: 1px solid #f4c10f;
+  /* Yellow focus */
 }
 
 .admin-add-destination button {
   padding: 12px;
   border: none;
   border-radius: 25px;
-  background: #f4c10f; /* Theme yellow */
+  background: #f4c10f;
+  /* Theme yellow */
   color: #000;
   font-weight: bold;
   font-size: 16px;
@@ -1380,9 +1424,12 @@ footer {
 /* Whatsapp icon styling */
 .whatsapp-icon {
   height: auto;
-  width: 12vw;             /* Scales with screen width */
-  max-width: 70px;         /* Never gets larger than this */
-  min-width: 40px;         /* Never smaller than this */
+  width: 12vw;
+  /* Scales with screen width */
+  max-width: 70px;
+  /* Never gets larger than this */
+  min-width: 40px;
+  /* Never smaller than this */
   cursor: pointer;
   /* transition: transform 0.3s ease; */
   animation: offerFloat 1.8s infinite ease-in-out;
@@ -1421,12 +1468,15 @@ footer {
 /* Mobile devices */
 @media (max-width: 480px) {
   .whatsapp-container {
-    bottom: 350px; /* Raises it higher on mobile view */
-    right: 15px;  /* Slightly inward for smaller screens */
+    bottom: 350px;
+    /* Raises it higher on mobile view */
+    right: 15px;
+    /* Slightly inward for smaller screens */
   }
 
-  .whatsapp-container span{
-    display: none; /* Hide text on small screens */
+  .whatsapp-container span {
+    display: none;
+    /* Hide text on small screens */
   }
 
   .whatsapp-icon {
@@ -1525,6 +1575,7 @@ footer {
 }
 
 @media (max-width: 480px) {
+
   .contact-form input,
   .contact-form textarea {
     font-size: 0.9rem;
@@ -1535,6 +1586,7 @@ footer {
     font-size: 1rem;
   }
 }
+
 /* =======================
    Feedback Section
 ======================= */
@@ -1612,7 +1664,7 @@ footer {
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
-          mask-composite: exclude;
+  mask-composite: exclude;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -1658,9 +1710,11 @@ footer {
 .feedback-card:nth-child(1) {
   animation-delay: 0.1s;
 }
+
 .feedback-card:nth-child(2) {
   animation-delay: 0.2s;
 }
+
 .feedback-card:nth-child(3) {
   animation-delay: 0.3s;
 }
@@ -1679,6 +1733,7 @@ footer {
   .feedback-heading {
     font-size: 2.3rem;
   }
+
   .feedback-container {
     gap: 25px;
   }
@@ -1688,6 +1743,7 @@ footer {
   .feedback-heading {
     font-size: 2rem;
   }
+
   .feedback-card {
     padding: 28px 20px;
   }
@@ -1732,9 +1788,9 @@ footer {
   gap: 8px;
   padding: 14px 22px;
   border-radius: 30px;
-  
+
   background: linear-gradient(135deg, #ff3d00, #ff8c00);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.20);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.20);
 
   text-decoration: none;
   color: white;
@@ -1754,9 +1810,17 @@ footer {
 }
 
 @keyframes offerFloat {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-6px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* mobile */
@@ -1789,7 +1853,7 @@ footer {
 
 .offers-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 20px;
 }
 
@@ -1797,10 +1861,11 @@ footer {
   background: #fff;
   border-radius: 12px;
   padding: 0;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
   transition: transform .3s ease;
   overflow: hidden;
-  height: 360px;  /* uniform height (you can adjust) */
+  height: 360px;
+  /* uniform height (you can adjust) */
 }
 
 .offer-card:hover {
@@ -1810,17 +1875,19 @@ footer {
 .offer-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* ensures uniform look */
+  object-fit: cover;
+  /* ensures uniform look */
 }
 
 /* MOBILE */
-@media(max-width:480px){
+@media(max-width:480px) {
   .offers-title {
     font-size: 24px;
   }
 
   .offer-card {
-    height: 260px;  /* smaller height for mobile */
+    height: 260px;
+    /* smaller height for mobile */
   }
 }
 
@@ -1844,7 +1911,8 @@ footer {
 .offer-details-img {
   width: 100%;
   border-radius: 14px;
-  object-fit: cover; /* same look as previous */
+  object-fit: cover;
+  /* same look as previous */
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
 }
 
@@ -1852,7 +1920,8 @@ footer {
 .offer-details-right {
   flex: 1;
   display: flex;
-  justify-content: center; /* CENTER vertically */
+  justify-content: center;
+  /* CENTER vertically */
   align-items: center;
 }
 
@@ -1912,4 +1981,3 @@ footer {
     text-align: left;
   }
 }
-
