@@ -1271,9 +1271,22 @@ footer {
 
 /* Error message styling */
 .error-message {
-  color: red;
+  color: #d60000; /* red */
+  background: #ffd6d6;
+  padding: 10px;
+  border-radius: 5px;
   margin-bottom: 15px;
-  text-align: center;
+  font-weight: 500;
+}
+
+/* Succes message styling */
+.success-message {
+  color: #0f8a1f; /* green */
+  background: #d4f8d9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-weight: 500;
 }
 
 /* Admin Add Destination Page */

@@ -6,6 +6,7 @@ import "../App.css";
 function AdminForgotPassword() {
     const [username, setUsername] = useState("admin");
     const [message, setMessage] = useState("");
+    const [isSuccess, setIsSuccess] = useState(false);
     const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
@@ -17,10 +18,11 @@ function AdminForgotPassword() {
                 "https://starry-mountain-backend.onrender.com/adminForgotPassword",
                 { username }
             );
-
+            setIsSuccess(true);
             setMessage("OTP sent to registered admin email.");
             setTimeout(() => navigate("/admin/verify-otp"), 1500);
         } catch (err) {
+            setIsSuccess(false);
             setMessage("Error sending OTP. Try again.");
         }
     };
@@ -30,7 +32,12 @@ function AdminForgotPassword() {
             <div className="login-form">
                 <h2>Forgot Password</h2>
 
-                {message && <p className="error-message">{message}</p>}
+                {message && (
+                    <p className={isSuccess ? "success-message" : "error-message"}>
+                        {message}
+                    </p>
+                )}
+
 
                 <form onSubmit={handleSubmit}>
                     <label>Admin Username</label>

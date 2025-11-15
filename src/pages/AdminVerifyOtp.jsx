@@ -6,6 +6,7 @@ import "../App.css";
 function AdminVerifyOtp() {
     const [otp, setOtp] = useState("");
     const [message, setMessage] = useState("");
+    const [isSuccess, setIsSuccess] = useState(false);
     const navigate = useNavigate();
 
     const handleVerify = async (e) => {
@@ -17,10 +18,11 @@ function AdminVerifyOtp() {
                 "https://starry-mountain-backend.onrender.com/adminVerifyOtp",
                 { otp }
             );
-
+            setIsSuccess(true);
             setMessage("OTP Verified Successfully!");
             setTimeout(() => navigate("/admin/reset-password"), 1500);
         } catch (err) {
+            setIsSuccess(false);
             setMessage("Invalid or expired OTP.");
         }
     };
@@ -30,7 +32,11 @@ function AdminVerifyOtp() {
             <div className="login-form">
                 <h2>Verify OTP</h2>
 
-                {message && <p className="error-message">{message}</p>}
+                {message && (
+                    <p className={isSuccess ? "success-message" : "error-message"}>
+                        {message}
+                    </p>
+                )}
 
                 <form onSubmit={handleVerify}>
                     <label>Enter OTP</label>

@@ -7,6 +7,7 @@ function AdminResetPassword() {
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
     const [message, setMessage] = useState("");
+    const [isSuccess, setIsSuccess] = useState(false);
     const navigate = useNavigate();
 
     const handleReset = async (e) => {
@@ -14,6 +15,7 @@ function AdminResetPassword() {
         setMessage("");
 
         if (password !== confirmPassword) {
+            setIsSuccess(false);
             setMessage("Passwords do not match.");
             return;
         }
@@ -23,10 +25,11 @@ function AdminResetPassword() {
                 "https://starry-mountain-backend.onrender.com/adminResetPassword",
                 { password, confirmPassword }
             );
-
+            setIsSuccess(true);
             setMessage("Password updated successfully!");
             setTimeout(() => navigate("/admin-login"), 1500);
         } catch (err) {
+            setIsSuccess(false);
             setMessage("Failed to reset password.");
         }
     };
@@ -36,7 +39,11 @@ function AdminResetPassword() {
             <div className="login-form">
                 <h2>Reset Password</h2>
 
-                {message && <p className="error-message">{message}</p>}
+                {message && (
+                    <p className={isSuccess ? "success-message" : "error-message"}>
+                        {message}
+                    </p>
+                )}
 
                 <form onSubmit={handleReset}>
                     <label>New Password</label>
