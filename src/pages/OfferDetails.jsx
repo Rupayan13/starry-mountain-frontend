@@ -21,7 +21,7 @@ const offerDetails = {
         price: "₹6499",
         destinations: {
             day1: "Rishop",
-            day2: "Ramadhura",
+            day2: "Ramdhura",
             day3: "Takdah",
             day4: "Darjeeling",
             day5: "NJP Drop"
@@ -61,7 +61,7 @@ const offerDetails = {
         destinations: {
             day1: "NJP to Gangtok",
             day2: "Gangtok local sightseeing",
-            day3: "Gamgtok to Pelling",
+            day3: "Gangtok to Pelling",
             day4: "Pelling local sightseeing",
             day5: "Pelling to NJP"
         }
